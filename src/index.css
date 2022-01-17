@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: "Monsterrat";
+  src: url('./fonts/Montserrat-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url('./fonts/ProximaNova.otf');
+}
