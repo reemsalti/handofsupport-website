@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import img from '/Users/reem/handofsupport-website/src/components/images/childrenplayingdt.jpg';
+import img from '../images/childrenplayingdt.jpg';
 import { Link } from 'react-router-dom';
 
 function About() {
