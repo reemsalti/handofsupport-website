@@ -2,7 +2,7 @@ import React from 'react';
 import Cards from '../Cards/Cards';
 import './Home.css';
 // import img from "/Users/reem/handofsupport-website/src/images/rainboots.jpg";
-import img from "/Users/reem/handofsupport-website/src/images/handsin.jpg";
+import img from "/Users/reem/handofsupport-website/src/Components/images/handsin.jpg";
 
 
 function Home() {
