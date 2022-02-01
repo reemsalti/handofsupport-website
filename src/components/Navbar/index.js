@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
-import {Nav, NavbarContainer, MobileIcon, NavMenu, NavItem, Logo, Link} from "./NavbarElements";
+import {Nav, NavbarContainer, MobileIcon, NavMenu, NavItem, Logo, NavLinks, NavBtn, NavBtnLink} from "./NavbarElements";
 
 
 const Navbar = ({ toggle }) => {
@@ -8,23 +8,31 @@ const Navbar = ({ toggle }) => {
         <>
         <Nav>
             <NavbarContainer>
-                <Logo />
+                <Logo to='/'>HOS</Logo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
-                    <NavItem>
-                        <Link to='/about'>ABOUT</Link>
+                <NavItem>
+                        <NavLinks to='/'>HOME</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <Link to='/policy'>POLICY</Link>
+                        <NavLinks to='/about'>OUR STORY</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <Link to='/location'>LOCATION</Link>
+                        <NavLinks to='/blog'>BLOG</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <Link to='/contact'>CONTACT</Link>
+                        <NavLinks to='/getinvolved'>GET INVOLVED</NavLinks>
                     </NavItem>
+                    <NavItem>
+                        <NavLinks to='/contact'>CONTACT</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                    <NavBtn>
+                <NavBtnLink to='/donate'>DONATE</NavBtnLink>
+                </NavBtn>
+                </NavItem>
                 </NavMenu>
             </NavbarContainer>
         </Nav>

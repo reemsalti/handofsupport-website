@@ -1,0 +1,144 @@
+/* Cards Layout Styling (Cards.js) */
+.cards {
+    margin: 10px;
+    
+    
+}
+
+@media screen and (max-width: 490px) {
+    .cards {
+        justify-self: center;
+    }
+}
+
+
+/* Individual Card Styling (CardItem.js) */
+
+.carditem {
+    display:flex;
+    list-style: none;
+    max-width: 350px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 5px;
+    padding: 0.2rem;
+    
+}
+
+
+
+.picwrap {
+    width: 100%;
+    justify-content: center;
+    overflow: none;
+    margin: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.picwrap::after {
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #14141400;
+    
+}
+
+.carditemIMG {
+    top: 0;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+    justify-items: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.carditemlink:hover {
+    transform: scale(1.1);
+}
+
+.carditemlink {
+    max-width: 300px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(3, 3, 3, 0.17);
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    text-decoration: none;
+    height: auto;
+}
+
+.carditeminfo {
+    color: black;
+    margin: 10px;
+    max-width: 300px;
+    height: auto;
+}
+
+.cardscontainer {
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.cardlist {
+    padding: 0;
+}
+
+@media screen and (min-width: 700px){
+.cardlist {
+    padding: 1rem;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    
+}
+}
+
+@media screen and (max-width: 800px) {
+    .cardlist {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin: 0;
+    }
+}
+
+.carditemtext {
+    font-family: 'Monsterrat';
+    margin: 3px;
+    text-align: left;
+}
+
+@media screen and (max-width: 490px) {
+    .carditemtext {
+        font-size: 0.9rem;
+    }
+}
+
+.cardtitle {
+    font-size: 1rem;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.cardswrapper {
+    justify-content: center !important;
+    justify-self: center;
+}
+
+.date {
+    margin: 8px;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}

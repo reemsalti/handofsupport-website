@@ -1,0 +1,90 @@
+.footer-container {
+    width: 100%;
+    height: auto;
+    background: rgb(72, 135, 187);
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.footerNav {
+    color: black;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+.footerNav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 5px;
+    
+}
+
+.navitem {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+}
+/* @media screen and (max-width: 460px){
+    .navitem {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 4.5px;
+}
+} */
+
+
+
+.btnwrapper {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.footerbtn {
+    border-radius: 10px;
+    background: #e0bb13;
+    align-items: center;
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-self: center;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+}
+
+
+ .footerbtn:hover{
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+
+.footerLogoSection {
+    text-align: center;
+}
+
+.footerLogo {
+    color: white;
+}
+
+.CR {
+    color: white;
+    font-size: 12pt;
+}
