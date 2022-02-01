@@ -1,7 +1,7 @@
 import React from "react";
 import CardItem from "./CardItem";
 import './Cards.css';
-import boots from '/Users/reem/handofsupport-website/src/images/rainboots.jpg';
+import boots from '/Users/reem/handofsupport-website/src/components/images/rainboots.jpg';
   
 
 
