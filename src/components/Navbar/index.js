@@ -22,9 +22,9 @@ const Navbar = ({ toggle }) => {
                     <NavItem>
                         <NavLinks to='/blog'>BLOG</NavLinks>
                     </NavItem>
-                    <NavItem>
+                    {/* <NavItem>
                         <NavLinks to='/getinvolved'>GET INVOLVED</NavLinks>
-                    </NavItem>
+                    </NavItem> */}
                     <NavItem>
                         <NavLinks to='/contact'>CONTACT</NavLinks>
                     </NavItem>

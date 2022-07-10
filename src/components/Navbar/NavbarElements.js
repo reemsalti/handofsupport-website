@@ -102,6 +102,7 @@ font-size: 1rem;
 display: flex;
 align-items: center;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+font-weight: 400;
 margin: auto;
 justify-self: flex-end;
 
@@ -121,11 +122,11 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
 border-radius: 10px;
-background: #FFDB4C;
+background: #fff;
 align-items: center;
 white-space: nowrap;
 padding: 10px 22px;
-color: #fff;
+color: #000;
 font-size: 16px;
 outline: none;
 border: none;
@@ -133,7 +134,7 @@ cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 800;
+font-weight: 700;
 
 &:hover {
     transition: all 0.2s ease-in-out;

@@ -8,7 +8,7 @@ position: fixed;
 z-index: 999;
 width: 100%;
 height: 100%;
-background: #12a4c9;
+background: rgb(72, 135, 187);
 display: grid;
 align-items: center;
 top: 0;
@@ -17,14 +17,15 @@ transition: 0.3s ease-in;
 visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
 top: ${({ isOpen }) => (isOpen ? '-100' : '0')};
 top: 0;
-font-family: "ProximaNova";
-font-weight: bolder;
+font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;;
+font-weight: 500;
 
 
 `;
 
 export const CloseIcon = styled(FaTimes)`
 color: #fff;
+
 `;
 
 export const Icon = styled.div`
@@ -60,7 +61,7 @@ export const SidebarLink = styled(LinkS)`
 display: flex;
 align-items: center;
 justify-content: center;
-font-size: 1.5rem;
+font-size: 1.2rem;
 text-decoration: none;
 list-style: none;
 text-decoration: none;
@@ -83,24 +84,23 @@ text-align: center;
 `
 
 export const SideBtnLink = styled(LinkS)`
-border-radius: 10px;
-background: #000;
+border-radius: 9px;
+background: #fff;
 align-items: center; 
-padding: 13px 15px;
-color: #fff;
-font-size: 1.3rem;
+padding: 11px 15px;
+color: #000;
+font-size: 1.2rem;
 outline: none;
 border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
-font-family: 'Monsterrat';
-font-weight: bold;
+font-weight: 600;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    font-size: 1.5rem;
-    background: #fff;
-    color: #000;
+    font-size: 1.4rem;
+    background: #000;
+    color: #fff;
 }
 `

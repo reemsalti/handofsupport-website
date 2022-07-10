@@ -4,9 +4,10 @@ import Cards from '../Cards/Cards';
 function Blog() {
   return (
   <div className='container'>
-    <h1>BLOG</h1>
+    <h2>BLOG</h2>
     <div className='cardgrid'>
-<Cards />
+      <h3 className='category-h'>Coming soon, please stay tuned.</h3>
+{/* <Cards /> */}
 </div>
       </div>
   )

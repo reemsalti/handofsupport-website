@@ -13,7 +13,7 @@ function About() {
                 </p>
             </div>
 
-            <h1 className='ourstory'>WHAT WE DO</h1>
+            <h2 className='ourstory'>WHAT WE DO</h2>
 
             <div className='description-container'>
                 <p className='aboutdescription'>
@@ -25,9 +25,9 @@ function About() {
             <div className='btnwrapper'>
         <Link className='getinvolvedbtn' to='/getinvolved'>GET INVOLVED</Link>
     </div>
-    
+
+    <h2 className='philosophy'>OUR PHILOSOPHY</h2>
         <p className='aboutdescription'>
-            <h2 className='philosophy'>OUR PHILOSOPHY</h2>
             The Hands of Support team will take any opportunity to help 
             anybody in need. We believe it is about the action, not the fruit of the action
             that is important. You have to do the right thing. 

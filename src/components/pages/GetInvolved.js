@@ -3,7 +3,7 @@ import React from 'react';
 function GetInvolved() {
   return (
   <div className='container'>
-      <h1>WANT TO HELP?</h1>
+      <h2>Want to help?</h2>
   </div>
   )
 }

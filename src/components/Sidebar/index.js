@@ -12,7 +12,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to='/'>HOME</SidebarLink>
                     <SidebarLink to='/about'>OUR STORY</SidebarLink>
                     <SidebarLink to='/blog'>BLOG</SidebarLink>
-                    <SidebarLink to='/getinvolved'>GET INVOLVED</SidebarLink>
+                    {/* <SidebarLink to='/getinvolved'>GET INVOLVED</SidebarLink> */}
                     <SidebarLink to='/contact'>CONTACT</SidebarLink>
                 </SidebarMenu>
                 <SideBtn>

@@ -5,7 +5,7 @@
     top:0;
     overflow: hidden;
     min-height: 100vh;
-    
+    justify-content: center;
 
 }
 
@@ -26,21 +26,102 @@ h1 {
 }
 
 h2 {
-    font-family: "Monsterrat";
-    padding-top: 4rem;
-    margin: 15px;
-    font-weight: 900;
+    font-family:'Gill Sans';
+    padding: 2rem;
+    margin: 0;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
 }
 
 .panel1 {
-    background: rgb(255, 255, 255);
+    font-family: 'Monsterrat';
+    max-width: 600px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+    
 }
 
+@media screen and (min-width: 640px) {
+    .panel1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0rem auto;
+    }
+}
 
 
 .homedescription {
-    margin: 25px;
-    padding-bottom: 4rem;
-    padding-top: 1rem;
-    font-size: 1.2rem;
+    font-family: 'Monsterrat';
+    max-width: 600px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    
+    
 }
+
+.factscontainer {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    text-align: center;
+    font-family: Monsterrat;
+    font-size: 10.5pt;
+    align-content: center;
+}
+
+/* .facts-left {
+
+
+} */
+
+.facth {
+    font-weight: 200;
+    font-size: 2rem;
+    font-family: Impact;
+}
+.emph {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1px;
+}
+
+.fact1 {
+    background: rgb(47, 61, 117);
+    padding: 1rem;
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    
+}
+
+.fact1p {
+   
+   
+    
+
+}
+
+.fact2 {
+    background: rgb(54, 52, 105);
+    padding: 1rem;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+.fact2p {
+    
+  }
+  
+  

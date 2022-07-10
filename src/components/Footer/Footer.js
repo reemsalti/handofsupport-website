@@ -9,7 +9,7 @@ function Footer() {
 <div className='footerNav'>
     <Link className='navitem' to='/about'>OUR STORY</Link>
     <Link className='navitem' to='/blog'>BLOG</Link>
-    <Link className='navitem' to='/getinvolved'>GET INVOLVED</Link>
+    {/* <Link className='navitem' to='/getinvolved'>GET INVOLVED</Link> */}
     <Link className='navitem' to='/contact'>CONTACT</Link>
     
 </div>
@@ -20,7 +20,7 @@ function Footer() {
     
 <div className='footerLogoSection'>
 <h1 className='footerLogo'>HOS</h1>
-<p className='CR'>Hands of Support © 2022</p>
+<p className='CR'>Hands of Support Foundation, Inc. © 2022</p>
 </div>
   </div>
   )
