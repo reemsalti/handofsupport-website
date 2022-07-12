@@ -1,60 +1,102 @@
-// import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import StripeContainer from '../StripeContainer';
 import './Donate.css';
 import img from '../images/heartinhand.jpg';
+import { Button } from 'react-scroll';
 
 function Donate() {
-  
+  const [donateAmount, setDonateAmount] = useState('')
+  const [donateLink, setDonateLink] = useState('')
+  const [buttons, setButtons] = useState([
+    { label: "$15", value: false },
+    { label: "$25", value: false },
+    { label: "$50", value: false },
+    { label: "$75", value: false },
+    { label: "$100", value: false },
+    { label: "Custom", value: false }
+  ]);
+
+  useEffect(() => {
+    console.log(donateLink)
+    console.log(buttons)
+    buttons.forEach((button) => {
+      if (button.value) {
+        setDonateAmount(button.label)
+        if (button.label === '$15') setDonateLink('https://donate.stripe.com/bIY15p5RegjFeKk9AB')
+        if (button.label === '$25') setDonateLink('https://donate.stripe.com/7sI01l93qgjF31C28d')
+        if (button.label === '$50') setDonateLink('https://donate.stripe.com/fZe01l3J68RdeKk4gm')
+        if (button.label === '$75') setDonateLink('https://donate.stripe.com/fZeeWf93q3wTgSsdQX')
+        if (button.label === '$100') setDonateLink('https://donate.stripe.com/cN27tNgvSd7tcCc5ks')
+        if (button.label === 'Custom') setDonateLink('https://donate.stripe.com/00g29tgvSebx31C8wA')
+      }
+    })
+  },[buttons, donateLink])
+
+  const handleButtonsChange = ({
+    buttons,
+    setButtons,
+    handleButtonsChange
+  }) => label => {
+    const newButtonsState = buttons.map(button => {
+      if (button.label === label) {
+        return (button = { label: button.label, value: true });
+      }
+      return {
+        label: button.label,
+        value: false
+      };
+    });
+    setButtons(newButtonsState);
+  };
+
   return (
-  <div className='donatecontainer'>
-    <div className='overlay'>
-            <img className='rainboots' src={img} alt=''/>
-                
-            </div>
-            <div className='bg-image'>
-              <div>
-                
-              </div>
-            </div>
-            <h2 className='Dh'>DONATE</h2>
-     
-     <p className='donate-p'>One simple way to make a difference and support our mission. 
-      The best gift you can give today.
-      </p>
-      <h3 className='category-h'>GIVE ONE-TIME</h3>
-      <div className='donationlistwrapper'>
-      <div className='donationlist'>
-        <div className='donationitem'>
-          <a className='itemlink' href='https://donate.stripe.com/bIY15p5RegjFeKk9AB'>$15</a>
-        </div>
-
-        <div className='donationitem'>
-          <a className='itemlink' href='https://donate.stripe.com/7sI01l93qgjF31C28d'>$25</a>
-        </div>
-
-        <div className='donationitem'>
-          <a className='itemlink' href='https://donate.stripe.com/fZe01l3J68RdeKk4gm'>$50</a>
-        </div>
-        <div className='donationitem'>
-          <a className='itemlink' href='https://donate.stripe.com/fZeeWf93q3wTgSsdQX'>$75</a>
-        </div>
-        <div className='donationitem'>
-          <a className='itemlink' href='https://donate.stripe.com/cN27tNgvSd7tcCc5ks'>$100</a>
+    <div className='donatecontainer'>
+      <div className='overlay'>
+      <img className='rainboots' src={img} alt=''/>
+      </div>
+      <div className='bg-image'>
+        <div>
         </div>
       </div>
-      
-        <div className='donationitemb'>
-            <a className='itemlink' href='https://donate.stripe.com/00g29tgvSebx31C8wA'>Custom Amount</a>
-          </div>
-      </div>
-        <h3 className='category-h'>GIVE MONTHLY</h3>
+      <h2 className='Dh'>DONATE</h2>
         
-  </div>
+        <p className='donate-p'>One simple way to make a difference and support our mission. 
+        The best gift you can give today.
+        </p>
+        <h3 className='category-h'>GIVE ONE-TIME</h3>
+        <div className='donationlistwrapper'>
+        <div className='donationlist'>
+        <ButtonGroup {...{ buttons, setButtons, handleButtonsChange }} />
+        </div>
+        <div className='donationitemb'>
+          <a className='itemlink' target='_blank' href={donateLink}>Donate</a>
+        </div>
+        </div>
+          <h3 className='category-h'>GIVE MONTHLY</h3>
+    </div>
   
   )
 }
 
 export default Donate;
+
+const ButtonGroup = ({ buttons, setButtons, handleButtonsChange }) => {
+  return (
+    <>
+      {buttons.map((button, index) => (
+        <button
+          key={`${button.label}-${index}`}
+          className={button.value === false ? 'donationitem' : 'donationitemselected'}
+          onClick={() =>
+            handleButtonsChange({ buttons, setButtons })(button.label)
+          }
+        >
+          {button.label.toUpperCase()}
+        </button>
+      ))}
+    </>
+  );
+};
 
 // import React, { useState, useEffect } from "react";
 // import { loadStripe } from "@stripe/stripe-js";

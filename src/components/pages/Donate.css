@@ -67,11 +67,26 @@ grid-template-columns: repeat(4, auto);
     justify-content: center;
     border: 3px solid rgb(38, 140, 199);
     border-radius: 10px;
+    color: rgb(38, 140, 199);
     font-family: Monsterrat;
     font-weight: 900;
     text-align: center;
     align-content: center;
     background-color: #fff;
+}
+
+.donationitemselected {
+    margin: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    border: 3px solid rgb(38, 140, 199);
+    border-radius: 10px;
+    color: #fff;
+    font-family: Monsterrat;
+    font-weight: 900;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(38, 140, 199);
 }
 .donationitemb {
     
@@ -81,15 +96,11 @@ grid-template-columns: repeat(4, auto);
 }
 
 .itemlink {
-    padding: 0rem;
-    margin: 1rem;
-    width: min-content;
     font-size: 14pt;
     color: rgb(38, 140, 199);
-    margin: 0;
     justify-content: center;
     text-align: center;
-    
+    width: 100%;
     
 }
 
